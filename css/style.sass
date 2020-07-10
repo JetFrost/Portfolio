@@ -1,0 +1,229 @@
+@import fonts.sass
+
+$grey: #464646
+$dark-grey: #353535
+$white-text: #d6d5d5
+$dark-text: #3d3d3d
+$middle-text: #696969
+$white: #fff
+$orange: #f4511e
+$dark-blue: #171f23
+
+body
+    font-family: "Roboto"
+    margin: 0
+    padding: 0
+
+h1, h2, h3, h4, h6, p
+    margin: 0
+    padding: 0
+
+.wrapper
+    width: 1200px
+    height: 100%
+    margin: 0 auto
+
+.head
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 33px 0 33px 0
+.menu
+    &-btn
+        cursor: pointer
+        padding: 5px 0
+        .mbtn
+            width: 28px
+            height: 2px
+            background: $grey
+            position: relative
+            &::after
+                content: ''
+                height: 2px
+                width: 100%
+                background: $grey
+                position: absolute
+                top: -7px
+            &::before
+                content: ''
+                height: 2px
+                width: 100%
+                background: $grey
+                position: absolute
+                top: 7px
+
+.banner
+    background: $dark-grey
+    min-height: 700px
+    text-align: center
+    .main-title
+        margin: 0
+        padding: 0
+        color: $white-text
+        font-family: "Big Noodle Titling"
+        font-size: 72px
+        font-weight: 400
+        text-transform: uppercase
+        letter-spacing: 10.8px
+        padding-top: 250px
+    .main-subtitle
+        margin: 0
+        padding: 0
+        color: $white-text
+        font-family: "Big Noodle Titling"
+        font-size: 36px
+        font-weight: 400
+        text-transform: uppercase
+        letter-spacing: 3.6px
+    .mouse
+        display: block
+        margin: 0 auto
+        margin-top: 220px
+        margin-bottom: 15px
+    span
+        color: $white-text
+        font-size: 12px
+        font-weight: 700
+        text-transform: uppercase
+
+
+.title
+    text-align: center
+    padding-top: 94px
+    padding-bottom: 56px
+    &__main 
+        margin: 0 auto
+        padding: 0
+        width: 200px
+        height: 35px
+        color: $dark-text
+        font-family: "Big Noodle Titling"
+        font-size: 48px
+        font-weight: 400
+        text-transform: uppercase
+        letter-spacing: 4.8px
+        position: relative
+        &::after
+            content: ''
+            width: 150px
+            height: 3px
+            background-color: $orange
+            position: absolute
+            bottom: -30px
+            left: calc(50% - 75px)
+    &__text
+        margin: 0
+        padding: 0
+        width: 544px
+        height: 31px
+        color: $middle-text
+        text-align: center
+        font-family: "Roboto"
+        font-size: 14px
+        font-weight: 400
+        margin: 0 auto
+        margin-top: 50px
+
+
+
+.about-cards
+    display: flex
+    align-items: center
+    justify-content: space-between
+    width: 1000px
+    margin: 0 auto
+    text-align: center
+    margin-bottom: 118px
+    &__item
+        width: 320px
+        height: 196px
+        background-color: #ebebeb
+        &:nth-child(1)
+            img
+                display: block
+                margin: 0 auto
+                width: 50px
+                height: 57px
+                margin-top: 31px
+            .about-cards__item_title
+                margin-top: 24px
+
+        &:nth-child(2)
+            img
+                display: block
+                margin: 0 auto
+                width: 48px
+                height: 44px
+                margin-top: 38px
+            .about-cards__item_title
+                margin-top: 29px
+        &:nth-child(3)
+            img
+                display: block
+                margin: 0 auto
+                width: 60px
+                height: 27px
+                margin-top: 46px
+            .about-cards__item_title
+                margin-top: 39px
+        
+        &_title
+            color: #707070
+            font-size: 18px
+            font-weight: 700
+            text-transform: uppercase
+            letter-spacing: 0.45px
+        &_text
+            color: #707070
+            font-size: 14px
+            font-weight: 400
+            letter-spacing: 0.35px
+            
+        
+.watch
+    background: $dark-blue
+    &-wp
+        display: flex
+        .watch__info
+            width: 50%
+            &_title
+                font-family: Roboto
+                font-size: 30px
+                font-weight: 700
+                text-transform: uppercase
+                color: $white-text
+                text-align: center
+                padding-top: 130px
+                margin-bottom: 28px
+            p
+                width: 477px
+                height: 65px
+                color: $white-text
+                font-size: 14px
+                font-weight: 400
+                margin: 0 auto
+                text-align: center
+            &_btn
+                display: block
+                width: 127px
+                height: 35px
+                line-height: 35px
+                background-color: $orange
+                color: #ebebeb
+                text-align: center
+                text-decoration: none
+                font-size: 14px
+                font-weight: 700
+                text-transform: uppercase
+                margin: 0 auto
+                margin-top: 46px
+
+        .watch__vibeo
+            width: 50%
+            position: relative
+            .tr
+                display: block
+                position: absolute
+                top: calc( 50% - 53px )
+                left: 50%
+        

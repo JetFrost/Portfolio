@@ -1,0 +1,306 @@
+@font-face {
+  font-family: "Big Noodle Titling";
+  src: url("../fonts/big_noodle_titling.ttf");
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Bold.ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Light.ttf");
+  font-weight: 300;
+}
+
+body {
+  font-family: "Roboto";
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 33px 0 33px 0;
+}
+
+.menu-btn {
+  cursor: pointer;
+  padding: 5px 0;
+}
+
+.menu-btn .mbtn {
+  width: 28px;
+  height: 2px;
+  background: #464646;
+  position: relative;
+}
+
+.menu-btn .mbtn::after {
+  content: '';
+  height: 2px;
+  width: 100%;
+  background: #464646;
+  position: absolute;
+  top: -7px;
+}
+
+.menu-btn .mbtn::before {
+  content: '';
+  height: 2px;
+  width: 100%;
+  background: #464646;
+  position: absolute;
+  top: 7px;
+}
+
+.banner {
+  background: #353535;
+  min-height: 700px;
+  text-align: center;
+}
+
+.banner .main-title {
+  margin: 0;
+  padding: 0;
+  color: #d6d5d5;
+  font-family: "Big Noodle Titling";
+  font-size: 72px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 10.8px;
+  padding-top: 250px;
+}
+
+.banner .main-subtitle {
+  margin: 0;
+  padding: 0;
+  color: #d6d5d5;
+  font-family: "Big Noodle Titling";
+  font-size: 36px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 3.6px;
+}
+
+.banner .mouse {
+  display: block;
+  margin: 0 auto;
+  margin-top: 220px;
+  margin-bottom: 15px;
+}
+
+.banner span {
+  color: #d6d5d5;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.title {
+  text-align: center;
+  padding-top: 94px;
+  padding-bottom: 56px;
+}
+
+.title__main {
+  margin: 0 auto;
+  padding: 0;
+  width: 200px;
+  height: 35px;
+  color: #3d3d3d;
+  font-family: "Big Noodle Titling";
+  font-size: 48px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 4.8px;
+  position: relative;
+}
+
+.title__main::after {
+  content: '';
+  width: 150px;
+  height: 3px;
+  background-color: #f4511e;
+  position: absolute;
+  bottom: -30px;
+  left: calc(50% - 75px);
+}
+
+.title__text {
+  margin: 0;
+  padding: 0;
+  width: 544px;
+  height: 31px;
+  color: #696969;
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.about-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 118px;
+}
+
+.about-cards__item {
+  width: 320px;
+  height: 196px;
+  background-color: #ebebeb;
+}
+
+.about-cards__item:nth-child(1) img {
+  display: block;
+  margin: 0 auto;
+  width: 50px;
+  height: 57px;
+  margin-top: 31px;
+}
+
+.about-cards__item:nth-child(1) .about-cards__item_title {
+  margin-top: 24px;
+}
+
+.about-cards__item:nth-child(2) img {
+  display: block;
+  margin: 0 auto;
+  width: 48px;
+  height: 44px;
+  margin-top: 38px;
+}
+
+.about-cards__item:nth-child(2) .about-cards__item_title {
+  margin-top: 29px;
+}
+
+.about-cards__item:nth-child(3) img {
+  display: block;
+  margin: 0 auto;
+  width: 60px;
+  height: 27px;
+  margin-top: 46px;
+}
+
+.about-cards__item:nth-child(3) .about-cards__item_title {
+  margin-top: 39px;
+}
+
+.about-cards__item_title {
+  color: #707070;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.45px;
+}
+
+.about-cards__item_text {
+  color: #707070;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.35px;
+}
+
+.watch {
+  background: #171f23;
+}
+
+.watch-wp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.watch-wp .watch__info {
+  width: 50%;
+}
+
+.watch-wp .watch__info_title {
+  font-family: Roboto;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #d6d5d5;
+  text-align: center;
+  padding-top: 130px;
+  margin-bottom: 28px;
+}
+
+.watch-wp .watch__info p {
+  width: 477px;
+  height: 65px;
+  color: #d6d5d5;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.watch-wp .watch__info_btn {
+  display: block;
+  width: 127px;
+  height: 35px;
+  line-height: 35px;
+  background-color: #f4511e;
+  color: #ebebeb;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 auto;
+  margin-top: 46px;
+}
+
+.watch-wp .watch__vibeo {
+  width: 50%;
+  position: relative;
+}
+
+.watch-wp .watch__vibeo .tr {
+  display: block;
+  position: absolute;
+  top: calc( 50% - 53px);
+  left: 50%;
+}
+/*# sourceMappingURL=style.css.map */
