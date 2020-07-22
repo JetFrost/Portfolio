@@ -1,6 +1,7 @@
 @import fonts.sass
 
 $grey: #464646
+$middle-grey: #ebebeb
 $dark-grey: #353535
 $white-text: #d6d5d5
 $dark-text: #3d3d3d
@@ -22,6 +23,8 @@ h1, h2, h3, h4, h6, p
     width: 1200px
     height: 100%
     margin: 0 auto
+
+
 
 .head
     display: flex
@@ -94,7 +97,6 @@ h1, h2, h3, h4, h6, p
     &__main 
         margin: 0 auto
         padding: 0
-        width: 200px
         height: 35px
         color: $dark-text
         font-family: "Big Noodle Titling"
@@ -226,4 +228,397 @@ h1, h2, h3, h4, h6, p
                 position: absolute
                 top: calc( 50% - 53px )
                 left: 50%
-        
+
+.sk
+    margin-top: 26px
+.whoweare
+    width: 1000px
+    display: flex
+    justify-content: space-between
+    margin: 0 auto
+    margin-bottom: 105px
+.block-worker
+    width: 320px
+    height: 436px
+    background: $middle-grey
+    .circle
+        height: 134px
+        width: 134px
+        border-radius: 50%
+        background: $orange
+        margin: 72px auto
+        margin-bottom: 20px
+    .name
+        color: #3d3d3d
+        font-size: 20px
+        font-weight: 700
+        text-transform: uppercase
+        letter-spacing: 2px
+        text-align: center
+    .job
+        color: #3d3d3d
+        font-size: 14px
+        font-weight: 300
+        text-transform: uppercase
+        letter-spacing: 1.4px
+        text-align: center
+    .contact
+        text-align: center
+        margin-top: 20px
+        a
+            color: #696969
+    .circles
+        width: 50px
+        display: flex
+        justify-content: space-between
+        margin: 0 auto
+        margin-top: 40px
+        .c
+            width: 11px
+            height: 11px
+            background-color: #ffffff
+            border-radius: 50%
+        .c_active
+            background-color: #8e8181
+.block-worker-inf
+    max-width: 661px
+    height: 436px
+    background: $middle-grey
+    .skills-tittle
+        color: #3d3d3d
+        font-size: 24px
+        font-weight: 400
+        text-transform: uppercase
+        letter-spacing: 2s.4px
+        margin-top: 123px
+        margin-left: 66px
+    .skills-text
+        font-size: 14px
+        font-weight: 400
+        color: #858383
+        width: 543px
+        margin-left: 66px
+        margin-right: 52px
+        margin-top: 20px
+    .skill
+        width: 543px
+        display: flex
+        margin-left: 66px
+        margin-top: 20px
+        align-items: center
+        &_title
+            display: block
+            width: 125px
+            margin-right: 3px
+            color: #3d3d3d
+            font-size: 14px
+            font-weight: 700
+            text-transform: uppercase
+            letter-spacing: 1.4px
+            flex-grow: 1
+        &_perc
+            display: block
+            color: #3d3d3d
+            font-size: 14px
+            font-weight: 700
+            flex-grow: 1
+            text-align: center
+            margin-left: 3px
+        &_bar
+            width: 369px
+            flex-grow: 4
+            background: $white
+            height: 2px
+            .b
+                height: 2px
+                width: 50%
+                background: $orange
+        &:nth-child(1)
+            .b
+                width: 88%
+        &:nth-child(2)
+            .b
+                width: 92%
+        &:nth-child(3)
+            .b
+                width: 90%
+        &:nth-child(4)
+            .b
+                width: 98%
+
+.features
+    background-color: #171f23
+    padding-bottom: 120px
+.title__black
+    color: #f6f6f6
+    margin-bottom: 40px
+    &::after
+            content: ''
+            width: 86px
+            height: 3px
+            background-color: #404040
+            position: absolute
+            bottom: -30px
+            left: calc(50% - 43px)
+
+.feature
+    display: flex
+    width: 1000px
+    justify-content: space-around
+    margin: 0 auto
+    &__block
+        height: 161px
+        text-align: center
+        .icon
+            height: 100px
+        &__title
+            color: #f6f6f6
+            font-size: 18px
+            font-weight: 300
+        &__num
+            color: #f6f6f6
+            font-size: 48px
+            font-weight: 300
+            margin-top: 15px
+
+.post
+    width: 1000px
+    display: flex
+    justify-content: space-between
+    margin: 0 auto
+    padding-bottom: 90px
+    &__card
+        width: 320px
+        height: 426px
+        background: #ebebeb
+        &__img
+            width: 320px
+            height: 218px
+            background: #787474
+            display: flex
+            align-items: center
+            justify-content: center
+            &__links
+                width: 107px
+                display: flex
+                justify-content: space-between
+                opacity: 0
+                transition: .2s
+                &-link
+                    display: block
+                    width: 43px
+                    height: 43px
+                    border-radius: 50%
+                    background: #f6e5e0
+                    color: $orange
+                    text-align: center
+                    line-height: 43px
+                    font-size: 20px
+                    transition: .2s
+                    &:hover
+                        background: $orange
+                        color: #fff
+        &:hover
+            .post__card__img__links
+                opacity: 1
+
+        &__title
+            color: #505050
+            font-size: 18px
+            font-weight: 300
+            letter-spacing: 1.8px
+            margin-top: 38px
+            margin-left: 25px
+        &__text
+            width: 258px
+            color: #797979
+            font-size: 14px
+            font-weight: 400
+            letter-spacing: 0.7px
+            margin-top: 28px
+            margin-left: 25px
+
+.coments
+    color: #8a8989
+    font-size: 10px
+    font-weight: 400
+    letter-spacing: 1px
+    display: flex
+    justify-content: space-between
+    width: 258px
+    margin: 0 auto
+    margin-top: 26px
+    .likes
+        span
+            display: block
+        i
+            display: block
+        display: flex
+        justify-content: space-between
+        width: 60px
+        .like
+            display: flex
+        .coment
+            display: flex
+
+.plans-section
+    background: #171f23
+    padding-bottom: 90px
+.plan
+    width: 938px
+    margin: 0 auto
+    display: flex
+    justify-content: space-between
+    text-align: center
+    &__card
+        width: 232px
+        height: 449px
+        // box-sizing: border-box
+        border: 2px solid transparent
+        color: #ffffff
+        // background: #1f282c
+        transition: .2s
+        position: relative
+        &__title
+            width: 231px
+            height: 128px
+            background-color: #0e1316
+            display: flex
+            align-items: center
+            justify-content: center
+            flex-direction: column
+            z-index: 2
+            &__name
+                font-size: 14px
+                font-weight: 700
+                text-transform: uppercase
+                letter-spacing: 1.41px
+            &__price
+                font-size: 36px
+                font-weight: 300
+                span
+                    font-size: 24px
+                    transition: .2s
+        ul
+            list-style: none
+            margin: 0
+            padding: 0
+            padding-top: 48px
+            li
+                margin-bottom: 21px
+                font-size: 14px
+                font-weight: 400
+                span
+                    font-weight: 700
+                    letter-spacing: 1.41px
+                    transition: .2s
+        &__btn
+            display: block
+            width: 125px
+            height: 34px
+            border-radius: 3px
+            background-color: #f6744b
+            margin: 0 auto
+            line-height: 34px
+            color: #ffffff
+            font-size: 14px
+            font-weight: 700
+            text-transform: uppercase
+            letter-spacing: 1.4px
+            text-decoration: none
+            margin-top: 55px
+            transition: .2s
+            &:hover
+                background: #fff
+                color: $orange
+        &__inf
+            background: #1f282c
+            height: calc( 449px - 128px )
+        &:hover
+            border: 2px solid $orange
+            ul
+                li
+                    span
+                        color: $orange
+    
+.get-in-touch
+    width: 775px
+    margin: 0 auto
+    margin-bottom: 85px
+    .btn
+        display: block
+        width: 203px
+        height: 51px
+        background-color: #f6744b
+        color: #ffffff
+        font-size: 14px
+        font-weight: 700
+        text-transform: uppercase
+        letter-spacing: 1.4px
+        text-align: center
+        line-height: 51px
+        margin: 0 auto
+        margin-top: 50px
+        text-decoration: none
+    label
+        color: #696969
+        font-size: 14px
+        font-weight: 700
+        text-transform: uppercase
+        letter-spacing: 1.4px
+        margin-bottom: 10px
+        span
+            color: #f6744b
+            letter-spacing: 1.4px
+    input, textarea
+        outline: none
+        border: none
+        border-bottom: 2px solid #cacaca
+        padding: 5px 8px
+        font-size: 18px
+        &:focus
+            border-bottom: 2px solid #f6744b
+    .a
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+    .f
+        display: flex
+        flex-direction: column
+    
+    .s
+        width: 371px
+        margin-bottom: 44px
+
+footer
+    background-color: #171f23
+    padding: 50px 0
+    .logo
+        text-align: center
+        width: 103px
+        margin: 0 auto
+        span
+            color: #ffffff
+            font-family: "Big Noodle Titling"
+            font-size: 24px
+            font-weight: 400
+            text-transform: uppercase
+            letter-spacing: 2.4px
+    .copyright
+        color: #ffffff
+        font-size: 14px
+        font-weight: 400
+        text-transform: uppercase
+        letter-spacing: 1.4px
+        text-align: center
+        margin-top: 10px
+    .links
+        margin-top: 10px
+        width: 67px
+        margin: 0 auto
+        margin-top: 10px
+        display: flex
+        justify-content: space-between
+        a
+            display: inline-block
+            color: #fff
